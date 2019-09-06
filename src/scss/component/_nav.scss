@@ -1,0 +1,73 @@
+
+
+.navi {
+    background-color: #fff;
+    padding: 30px 0;
+    @include sp {
+        padding: 0;
+        background-color: $pointColor;
+        padding-bottom: 10px;
+    }
+}
+    
+.syozokuList {
+    @include sp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.btnSyozoku {
+    cursor: pointer;
+    // border-bottom: 1px dotted $pointColor;
+    // &:nth-child(even) {
+    //     background-color: $pointColor;
+    // }
+    color: $pointColor;
+    position: relative;
+    transition: color 0.2s, background-color 0.2s;
+    box-sizing: border-box;
+    &:before,
+    &:after {
+        content: ""; 
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border: 0px;
+        @include sp {
+            display: none;
+        }
+    }
+    &:before {
+        border-right: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        top: 0;
+    }
+    &:after {
+        border-right: 30px solid #fff;
+        border-top: 30px solid transparent;
+        bottom: 0;
+    }
+    @include pc {
+        padding: 15px 30px;
+    }
+
+    @include sp {
+        padding: 5px 10px;
+        display: inline-block;
+        position: relative;
+        // margin-bottom: 10px;
+        background-color: #fff;
+        // border: 1px solid $pointColor;
+        margin-right: 1px;
+        margin-bottom: 1px;
+    }
+    &.is-cursor {
+        background-color: rgba($pointColor, 0.8);
+        color: #fff;
+        @include sp {
+            border: 1px solid #fff;
+        }
+    }
+}

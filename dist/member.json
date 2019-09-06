@@ -1,0 +1,65 @@
+[{
+    "name": "矢吹 龍太郎",
+    "hurigana": "やぶき りゅうたろう",
+    "syozoku": "役員",
+    "img":["./img/sys/test.png"],
+    "position": "代表取締役"
+  },
+  {
+    "name": "津田 俊也",
+    "hurigana": "つだ としや",
+    "syozoku": "役員",
+    "img":["./img/sys/test.png"],
+    "position": "取締役"
+  },
+  {
+    "name": "遠藤 久",
+    "hurigana": "えんどう ひさし",
+    "syozoku": "役員",
+    "img":["./img/sys/test.png"],
+    "position": "執行役員"
+  },
+  {
+    "name": "吉田 由香",
+    "hurigana": "よしだ ゆか",
+    "syozoku": "人事",
+    "img":["./img/sys/test.png"],
+    "position": "主任"
+  },
+  {
+    "name": "岡崎 聡",
+    "hurigana": "おかざき さとし",
+    "syozoku": "人事",
+    "img":["./img/sys/test.png"]
+  },
+  {
+    "name": "坂本 裕美",
+    "hurigana": "さかもと ひろみ",
+    "syozoku": "総務",
+    "img":["./img/sys/test.png"]
+  },
+  {
+    "name": "松永 麻衣子",
+    "hurigana": "まつなが まいこ",
+    "syozoku": "総務",
+    "img":["./img/sys/test.png"]
+  },
+  {
+    "name": "田村 憲一",
+    "hurigana": "たむら けんいち",
+    "syozoku": "営業",
+    "img":["./img/sys/test.png"]
+  },
+  {
+    "name": "後藤 英治",
+    "hurigana": "ごとう えいじ",
+    "syozoku": "営業",
+    "img":["./img/sys/test.png"]
+  },
+  {
+    "name": "大山 孝",
+    "hurigana": "おおやま たかし",
+    "syozoku": "営業",
+    "img":["./img/sys/test.png"]
+  }
+]

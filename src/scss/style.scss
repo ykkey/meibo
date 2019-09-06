@@ -1,0 +1,62 @@
+@import "var";
+@import "reset";
+@import "mixin";
+
+@import "component/nav";
+@import "component/member";
+@import "component/modal";
+
+
+html,
+body {
+    height: 100%;
+    background-color: $pointColor;
+}
+
+#app {
+    min-height: 100%;
+    color: $font;
+    font-weight: 200;
+    padding: 20px;
+    @include pc {
+        display: flex;
+    }
+    @include sp {
+        padding: 10px;
+    }
+}
+
+p,
+h1,
+h2,
+h3 {
+    font-weight: 200;
+}
+
+.content {
+    // flex-grow: 1;
+    flex-basis: 100%;
+}
+.navi {
+    @include pc {
+        flex-basis: 200px;
+        width: 200px;
+        flex-shrink: 0;
+    }
+    @include sp {
+        width: 100%;
+    }
+}
+
+.memberTitle {
+    width: 100%;
+    background-color: $white;
+}
+
+.content {
+    background: $gray;
+}
+
+ul {
+    list-style-type: none;
+}

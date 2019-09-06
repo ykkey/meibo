@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LOWCAL 社員紹介</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 絞り込み -->
+    <div class="navi">
+      <ul class="syozokuList">
+        <li class="btnSyozoku is-cursor" v-on:click="changeShozoku('all',$event)">全社員</li>
+        <li v-for="name in syozoku" class="btnSyozoku" v-on:click="changeShozoku(name, $event)">{{name}}</li>
+      </ul>
+    </div>
+    <!-- リスト -->
+    <div class="content">
+      <h2 class="memberTitle">所属: {{display}}</h2>
+
+      <ul class="memberList">
+        <!-- // v-html -->
+        <li class="memberItem" v-for="(member, index) in members" v-buind:key="index" v-if="display == member.syozoku || display == 'all'">
+          <p class="memberImg" v-on:click="openModal(member)"><img :src="member.image"></p>
+          <ul class="memberPic" :class = "`img_cursor-${member.imgCursor}`">
+            <li class="memberPicItem" :data-src="member.img[0]" @click="imgChange(member.img[0], index, 0)"></li>
+            <li class="memberPicItem" :data-src="member.img[1]" @click="imgChange(member.img[1], index, 1)"></li>
+          </ul>
+          <p class="memberPosition" v-if="member.position !== undefined">{{ member.position }}</p>
+          <p><span class="memberName">{{ member.name }}</span><span class="memberHurigana">({{ member.hurigana }})</span></p>
+          <p class="memberDetail" v-if="member.detail !== undefined">{{member.detail}}</p>
+        </li>
+      </ul>
+    </div>
+  <div class="modal" v-if="modalContent !== ''">
+    <div class="modalOverlay" v-on:click="closeModal"></div>
+    <div class="modalContent" v-html="modalContent">
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
