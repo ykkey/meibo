@@ -39,7 +39,7 @@ $pointColor: #84a1a8;// 任意のWEBカラーに変更
 
 
 # 著者
-yukiko
+[ykkey](https://github.com/ykkey)
 
 # License
-This project is licensed under the MIT License
+[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
